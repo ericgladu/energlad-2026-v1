@@ -7,7 +7,7 @@ const HowWeWorkSection = () => {
       icon: Scale,
       title: "Independent by Design",
       description:
-        "We do not sell equipment or installations—our focus is objective performance and reliability.",
+        "We are not tied to any manufacturer or installer—our recommendations are based solely on system performance and your best interest.",
     },
     {
       icon: BarChart2,
