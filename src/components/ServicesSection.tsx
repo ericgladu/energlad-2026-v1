@@ -1,50 +1,36 @@
 import { 
-  Monitor, 
-  Wrench, 
-  BarChart3, 
+  Settings, 
   ClipboardCheck, 
-  FolderKanban,
-  PenTool
+  LifeBuoy,
+  UserCheck
 } from "lucide-react";
 import { FadeInUp, StaggerContainer, StaggerItem } from "@/components/ui/scroll-animate";
 
 const ServicesSection = () => {
   const services = [
     {
-      icon: Monitor,
-      title: "24/7 Remote Monitoring",
+      icon: Settings,
+      title: "Operations & Maintenance (O&M)",
       description:
-        "Continuous performance tracking with automated alerting to identify production anomalies before they impact revenue.",
-    },
-    {
-      icon: Wrench,
-      title: "Preventative & Corrective Maintenance",
-      description:
-        "Scheduled inspections and rapid-response service to maintain system uptime and extend asset lifespan.",
-    },
-    {
-      icon: BarChart3,
-      title: "Performance Analysis & Reporting",
-      description:
-        "Detailed production metrics, degradation tracking, and periodic reporting for informed asset management decisions.",
+        "Ongoing system monitoring, preventative maintenance, troubleshooting, and corrective actions to maximize uptime and energy yield.",
     },
     {
       icon: ClipboardCheck,
-      title: "Technical Due Diligence",
+      title: "Independent Inspections & Quality Assurance",
       description:
-        "Independent inspections and commissioning oversight to verify quality and ensure accountability.",
+        "Commissioning, periodic inspections, and third-party quality reviews aligned with industry standards and best practices.",
     },
     {
-      icon: FolderKanban,
-      title: "Asset Management",
+      icon: LifeBuoy,
+      title: "Lifecycle Asset Support",
       description:
-        "Lifecycle planning, warranty administration, and coordination with utilities and regulatory bodies.",
+        "From post-installation handover through mid-life inspections and repowering support, we stay engaged beyond a single project phase.",
     },
     {
-      icon: PenTool,
-      title: "Engineering Services",
+      icon: UserCheck,
+      title: "Technical Advisory & Owner Representation",
       description:
-        "Engineering-led design support and technical reviews delivered through vetted third-party partners.",
+        "Engineering insight and owner-side support for asset owners, co-operatives, and institutional clients.",
     },
   ];
 
@@ -54,16 +40,13 @@ const ServicesSection = () => {
         {/* Section Header */}
         <FadeInUp className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground font-display mb-4">
-            Technical Services
+            Our Services
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Operational support designed to protect performance and extend the productive life of your PV assets.
-          </p>
           <div className="w-20 h-1 bg-primary mx-auto rounded-full mt-6" />
         </FadeInUp>
 
         {/* Services Grid */}
-        <StaggerContainer className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <StaggerContainer className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {services.map((service) => (
             <StaggerItem key={service.title}>
               <div className="service-card group h-full">

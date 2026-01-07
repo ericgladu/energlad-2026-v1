@@ -25,18 +25,25 @@ const ContactSection = () => {
   ];
 
   return (
-    <section id="contact" className="py-24 bg-muted/50">
+    <section id="contact" className="py-24 bg-background">
       <div className="container mx-auto px-6">
         {/* Section Header */}
-        <FadeInUp className="text-center mb-16">
+        <FadeInUp className="text-center mb-8">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground font-display mb-4">
-            Talk to a Solar Specialist
+            Let's Protect Your Solar Asset
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Whether you need ongoing O&M support, a second opinion, help navigating a technical 
-            issue or owner side technical representation—we're here to help.
+            Whether you manage a single system or a growing portfolio, EnerGlad provides the 
+            technical oversight needed to protect performance and long-term value.
           </p>
           <div className="w-20 h-1 bg-primary mx-auto rounded-full mt-6" />
+        </FadeInUp>
+
+        {/* CTA */}
+        <FadeInUp delay={0.2} className="text-center mb-16">
+          <Button size="lg" className="rounded-full px-10 py-6 text-base font-semibold" asChild>
+            <a href="mailto:info@energlad.com?subject=Consultation%20Request">Request a Consultation</a>
+          </Button>
         </FadeInUp>
 
         {/* Contact Cards */}
@@ -65,12 +72,8 @@ const ContactSection = () => {
           ))}
         </StaggerContainer>
 
-        {/* CTA */}
-        <FadeInUp delay={0.3} className="text-center mt-12">
-          <Button size="lg" className="rounded-full px-10 py-6 text-base font-semibold" asChild>
-            <a href="mailto:info@energlad.com?subject=PV%20Support%20Inquiry">Request PV Support</a>
-          </Button>
-          <p className="text-sm text-muted-foreground mt-4">
+        <FadeInUp delay={0.4} className="text-center mt-8">
+          <p className="text-sm text-muted-foreground">
             We typically respond within one business day.
           </p>
         </FadeInUp>
