@@ -1,9 +1,28 @@
+import { Shield, Clock, MapPin } from "lucide-react";
 import solarAboutImage from "@/assets/solar-about.jpg";
 
 const AboutSection = () => {
   const stats = [
-    { value: "8MW+", label: "Under Contract" },
+    { value: "10MW+", label: "Under Contract" },
     { value: "2", label: "Countries Served" },
+  ];
+
+  const values = [
+    {
+      icon: Shield,
+      title: "Independent",
+      description: "No ties to manufacturers or installers—our recommendations are based solely on asset performance.",
+    },
+    {
+      icon: Clock,
+      title: "Long-Term Focus",
+      description: "We measure success in decades, not project milestones. Your asset's lifecycle is our commitment.",
+    },
+    {
+      icon: MapPin,
+      title: "Ontario-Based",
+      description: "Headquartered in Ottawa with deep knowledge of Canadian regulatory and grid requirements.",
+    },
   ];
 
   return (
@@ -12,27 +31,32 @@ const AboutSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground font-display mb-4">
-            Powering Your Solar Future
+            Stewards of Solar Assets
           </h2>
-          <div className="w-20 h-1 bg-primary mx-auto rounded-full" />
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            We partner with asset owners for the full operational lifecycle—not just a single project phase.
+          </p>
+          <div className="w-20 h-1 bg-primary mx-auto rounded-full mt-6" />
         </div>
 
         {/* Content Grid */}
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
           {/* Text Content */}
           <div className="space-y-6">
             <div className="inline-block px-4 py-2 bg-primary/10 rounded-full">
-              <span className="text-sm font-semibold text-primary">Founded in 2020</span>
+              <span className="text-sm font-semibold text-primary">Established 2020</span>
             </div>
             
             <p className="text-lg text-muted-foreground leading-relaxed">
-              EnerGlad is a rapidly growing company providing comprehensive services for 
-              solar PV asset owners across Canada and the USA.
+              EnerGlad is an independent solar specialist providing comprehensive O&M, 
+              monitoring, and asset management services for PV system owners across 
+              Canada and the USA.
             </p>
             
             <p className="text-lg text-muted-foreground leading-relaxed">
-              With over 8MW of solar assets currently under contract, we deliver excellence 
-              in operations, maintenance, construction, and project management.
+              With over 10MW currently under contract, we bring technical depth and 
+              operational transparency to every engagement. Our role is to protect 
+              your investment and ensure consistent energy production—year after year.
             </p>
 
             {/* Stats */}
@@ -51,13 +75,33 @@ const AboutSection = () => {
             <div className="rounded-2xl overflow-hidden shadow-2xl">
               <img 
                 src={solarAboutImage} 
-                alt="Solar installation" 
+                alt="Commercial solar installation" 
                 className="w-full h-auto object-cover"
               />
             </div>
             {/* Decorative element */}
             <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-primary/10 rounded-2xl -z-10" />
           </div>
+        </div>
+
+        {/* Values Grid */}
+        <div className="grid md:grid-cols-3 gap-8">
+          {values.map((value) => (
+            <div 
+              key={value.title}
+              className="text-center p-6"
+            >
+              <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
+                <value.icon className="w-7 h-7 text-primary" />
+              </div>
+              <h3 className="text-xl font-bold text-foreground font-display mb-2">
+                {value.title}
+              </h3>
+              <p className="text-muted-foreground text-sm leading-relaxed">
+                {value.description}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
     </section>

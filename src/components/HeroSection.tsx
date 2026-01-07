@@ -33,34 +33,43 @@ const HeroSection = () => {
           </div>
         </div>
 
+        {/* Tagline Badge */}
+        <div className="mb-6 animate-fade-in">
+          <span className="inline-block px-4 py-2 rounded-full bg-[hsl(var(--text-light)/0.1)] border border-[hsl(var(--text-light)/0.2)] text-sm font-medium text-[hsl(var(--text-light)/0.9)] tracking-wide">
+            Ontario-Based · Independent · Solar Specialists
+          </span>
+        </div>
+
         {/* Headline */}
         <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-[hsl(var(--text-light))] mb-6 animate-fade-in font-display leading-tight">
-          You'll be glad you went
-          <br />
-          <span className="text-primary">with EnerGlad!</span>
+          Built for the Long Haul
         </h1>
 
         {/* Subtitle */}
-        <p className="text-lg md:text-xl text-[hsl(var(--text-light-muted))] max-w-2xl mx-auto mb-10 animate-fade-in-delay-1">
-          Comprehensive solar PV solutions for asset owners across Canada and the USA
+        <p className="text-lg md:text-xl text-[hsl(var(--text-light-muted))] max-w-2xl mx-auto mb-4 animate-fade-in-delay-1">
+          Stewards of solar PV assets across Canada and the USA
+        </p>
+        
+        <p className="text-base text-[hsl(var(--text-light-muted)/0.8)] max-w-xl mx-auto mb-10 animate-fade-in-delay-1">
+          Long-term operational support, monitoring, and asset management for solar PV systems
         </p>
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-delay-2">
           <Button 
             size="lg"
-            onClick={() => scrollToSection("#services")}
+            onClick={() => scrollToSection("#contact")}
             className="rounded-full px-8 py-6 text-base font-semibold"
           >
-            Explore Services
+            Request PV Support
           </Button>
           <Button 
             size="lg"
             variant="outline"
-            onClick={() => scrollToSection("#contact")}
+            onClick={() => scrollToSection("#services")}
             className="rounded-full px-8 py-6 text-base font-semibold border-[hsl(var(--text-light)/0.3)] text-[hsl(var(--text-light))] hover:bg-[hsl(var(--text-light)/0.1)] hover:text-[hsl(var(--text-light))]"
           >
-            Get in Touch
+            Our Services
           </Button>
         </div>
       </div>

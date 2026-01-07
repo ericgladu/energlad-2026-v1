@@ -11,6 +11,7 @@ const Header = () => {
     { label: "Home", href: "#home" },
     { label: "About", href: "#about" },
     { label: "Services", href: "#services" },
+    { label: "Clients", href: "#clients" },
     { label: "Contact", href: "#contact" },
   ];
 
@@ -49,7 +50,7 @@ const Header = () => {
               onClick={() => scrollToSection("#contact")}
               className="rounded-full px-6"
             >
-              Get In Touch
+              Request PV Support
             </Button>
           </nav>
 
@@ -87,7 +88,7 @@ const Header = () => {
                 onClick={() => scrollToSection("#contact")}
                 className="rounded-full w-full mt-2"
               >
-                Get In Touch
+                Request PV Support
               </Button>
             </div>
           </nav>

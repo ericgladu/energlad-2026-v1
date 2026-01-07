@@ -11,27 +11,27 @@ const ServicesSection = () => {
     {
       icon: Monitor,
       title: "24/7 Remote Monitoring",
-      description: "Daily energy monitoring to preempt production affecting issues and ensure optimal performance.",
+      description: "Continuous performance tracking with automated alerting to identify production anomalies before they impact revenue.",
     },
     {
       icon: Wrench,
-      title: "Preventative & Reactive Maintenance",
-      description: "Routine maintenance to minimize downtime and enhance system ROI with rapid response capabilities.",
+      title: "Preventative & Corrective Maintenance",
+      description: "Scheduled inspections and rapid-response service to maintain system uptime and extend asset lifespan.",
     },
     {
       icon: BarChart3,
-      title: "Energy Production Analysis",
-      description: "Performance metric analysis and comprehensive reporting for informed decision-making.",
+      title: "Performance Analysis & Reporting",
+      description: "Detailed production metrics, degradation tracking, and periodic reporting for informed asset management decisions.",
     },
     {
       icon: ClipboardCheck,
-      title: "3rd Party Due Diligence",
-      description: "Inspection services ensuring construction compliance with industry standards and installer accountability.",
+      title: "Technical Due Diligence",
+      description: "Independent inspections and commissioning oversight to verify quality and ensure accountability.",
     },
     {
       icon: FolderKanban,
-      title: "Project Management",
-      description: "End-to-end project management from design to commissioning, delivering on-time and within budget.",
+      title: "Asset Management",
+      description: "Lifecycle planning, warranty administration, and coordination with utilities and regulatory bodies.",
     },
   ];
 
@@ -41,10 +41,10 @@ const ServicesSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground font-display mb-4">
-            Our Services
+            Technical Services
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Comprehensive solar PV solutions tailored to maximize your investment
+            Operational support designed to protect performance and extend the productive life of your PV assets.
           </p>
           <div className="w-20 h-1 bg-primary mx-auto rounded-full mt-6" />
         </div>
