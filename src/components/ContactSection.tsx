@@ -24,15 +24,16 @@ const ContactSection = () => {
   ];
 
   return (
-    <section id="contact" className="py-24 bg-background">
+    <section id="contact" className="py-24 bg-muted/50">
       <div className="container mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground font-display mb-4">
-            Get in Touch
+            Talk to a Solar Specialist
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Ready to maximize your solar investment? Contact us today.
+            Whether you need ongoing O&M support, a second opinion on system performance, 
+            or help navigating a technical issue—we're here to help.
           </p>
           <div className="w-20 h-1 bg-primary mx-auto rounded-full mt-6" />
         </div>
@@ -71,8 +72,11 @@ const ContactSection = () => {
             className="rounded-full px-10 py-6 text-base font-semibold"
             asChild
           >
-            <a href="mailto:info@energlad.com">Send Us a Message</a>
+            <a href="mailto:info@energlad.com?subject=PV%20Support%20Inquiry">Request PV Support</a>
           </Button>
+          <p className="text-sm text-muted-foreground mt-4">
+            We typically respond within one business day.
+          </p>
         </div>
       </div>
     </section>
