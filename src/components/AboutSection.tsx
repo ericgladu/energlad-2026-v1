@@ -1,32 +1,27 @@
 import { Shield, Clock, MapPin } from "lucide-react";
 import solarAboutImage from "@/assets/solar-about.jpg";
-
 const AboutSection = () => {
-  const stats = [
-    { value: "10MW+", label: "Under Contract" },
-    { value: "2", label: "Countries Served" },
-  ];
-
-  const values = [
-    {
-      icon: Shield,
-      title: "Independent",
-      description: "No ties to manufacturers or installers—our recommendations are based solely on asset performance.",
-    },
-    {
-      icon: Clock,
-      title: "Long-Term Focus",
-      description: "We measure success in decades, not project milestones. Your asset's lifecycle is our commitment.",
-    },
-    {
-      icon: MapPin,
-      title: "Ontario-Based",
-      description: "Headquartered in Ottawa with deep knowledge of Canadian regulatory and grid requirements.",
-    },
-  ];
-
-  return (
-    <section id="about" className="py-24 bg-background">
+  const stats = [{
+    value: "10MW+",
+    label: "Under Contract"
+  }, {
+    value: "2",
+    label: "Countries Served"
+  }];
+  const values = [{
+    icon: Shield,
+    title: "Independent",
+    description: "No ties to manufacturers or installers—our recommendations are based solely on asset performance."
+  }, {
+    icon: Clock,
+    title: "Long-Term Focus",
+    description: "We measure success in decades, not project milestones. Your asset's lifecycle is our commitment."
+  }, {
+    icon: MapPin,
+    title: "Ontario-Based",
+    description: "Headquartered in Ottawa with deep knowledge of Canadian regulatory and grid requirements."
+  }];
+  return <section id="about" className="py-24 bg-background">
       <div className="container mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -44,7 +39,7 @@ const AboutSection = () => {
           {/* Text Content */}
           <div className="space-y-6">
             <div className="inline-block px-4 py-2 bg-primary/10 rounded-full">
-              <span className="text-sm font-semibold text-primary">Established 2020</span>
+              <span className="text-sm font-semibold text-primary">Established 2019</span>
             </div>
             
             <p className="text-lg text-muted-foreground leading-relaxed">
@@ -53,31 +48,21 @@ const AboutSection = () => {
               Canada and the USA.
             </p>
             
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              With over 10MW currently under contract, we bring technical depth and 
-              operational transparency to every engagement. Our role is to protect 
-              your investment and ensure consistent energy production—year after year.
-            </p>
+            <p className="text-lg text-muted-foreground leading-relaxed">With over 10 MW under active contract, we bring deep technical expertise and operational transparency to every engagement. Our role is to protect your investment and ensure reliable energy production—year after year.</p>
 
             {/* Stats */}
             <div className="flex gap-12 pt-6">
-              {stats.map((stat) => (
-                <div key={stat.label} className="stat-item">
+              {stats.map(stat => <div key={stat.label} className="stat-item">
                   <div className="stat-number">{stat.value}</div>
                   <div className="text-sm text-muted-foreground mt-1">{stat.label}</div>
-                </div>
-              ))}
+                </div>)}
             </div>
           </div>
 
           {/* Image */}
           <div className="relative">
             <div className="rounded-2xl overflow-hidden shadow-2xl">
-              <img 
-                src={solarAboutImage} 
-                alt="Commercial solar installation" 
-                className="w-full h-auto object-cover"
-              />
+              <img src={solarAboutImage} alt="Commercial solar installation" className="w-full h-auto object-cover" />
             </div>
             {/* Decorative element */}
             <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-primary/10 rounded-2xl -z-10" />
@@ -86,11 +71,7 @@ const AboutSection = () => {
 
         {/* Values Grid */}
         <div className="grid md:grid-cols-3 gap-8">
-          {values.map((value) => (
-            <div 
-              key={value.title}
-              className="text-center p-6"
-            >
+          {values.map(value => <div key={value.title} className="text-center p-6">
               <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
                 <value.icon className="w-7 h-7 text-primary" />
               </div>
@@ -100,12 +81,9 @@ const AboutSection = () => {
               <p className="text-muted-foreground text-sm leading-relaxed">
                 {value.description}
               </p>
-            </div>
-          ))}
+            </div>)}
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default AboutSection;
