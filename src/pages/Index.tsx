@@ -8,7 +8,6 @@ import ClientsSection from "@/components/ClientsSection";
 import HowWeWorkSection from "@/components/HowWeWorkSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
-import MobileStickyCTA from "@/components/MobileStickyCTA";
 
 const Index = () => {
   return (
@@ -25,7 +24,6 @@ const Index = () => {
         <ContactSection />
       </main>
       <Footer />
-      <MobileStickyCTA />
     </div>
   );
 };

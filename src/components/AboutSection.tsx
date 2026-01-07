@@ -16,6 +16,9 @@ const AboutSection = () => {
                 className="w-full h-auto object-cover"
               />
             </div>
+            <p className="text-xs text-muted-foreground mt-3 text-center italic">
+              Representative system maintained by EnerGlad. Client details withheld.
+            </p>
             {/* Decorative element */}
             <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-primary/10 rounded-2xl -z-10" />
           </SlideInLeft>

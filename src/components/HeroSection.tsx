@@ -44,7 +44,7 @@ const HeroSection = () => {
         </p>
         
         <p className="text-base text-[hsl(var(--text-light-muted)/0.8)] max-w-2xl mx-auto mb-10 animate-fade-in-delay-1">
-          Protecting production, reducing unplanned downtime, and safeguarding long-term asset value—year after year.
+          Protect production, reduce unplanned downtime, and safeguard long-term asset value—year after year.
         </p>
 
         {/* CTA Buttons */}
@@ -58,11 +58,11 @@ const HeroSection = () => {
           </Button>
           <Button 
             size="lg"
-            variant="secondary"
+            variant="outline"
             onClick={() => scrollToSection("#services")}
-            className="rounded-full px-8 py-6 text-base font-semibold"
+            className="rounded-full px-8 py-6 text-base font-semibold bg-background/20 border-foreground/50 text-foreground hover:bg-background/40 hover:text-foreground"
           >
-            See Services
+            View Services
           </Button>
         </div>
       </div>
