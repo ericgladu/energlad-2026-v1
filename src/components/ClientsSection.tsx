@@ -10,7 +10,7 @@ const ClientsSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground font-display mb-4">
-            Representative Clients
+            Clients and Partners
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             We work with commercial, industrial, and institutional asset owners who value 
