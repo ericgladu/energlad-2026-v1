@@ -31,7 +31,7 @@ const Header = () => {
           <Link to="/" className="flex-shrink-0">
             <img
               src={energladLogo}
-              alt="EnerGlad Renewables"
+              alt="EnerGlad Renewables - Independent Solar Asset Management in Ontario"
               className="h-16 w-auto"
             />
           </Link>
