@@ -41,7 +41,7 @@ const OutcomesSection = () => {
         </FadeInUp>
 
         {/* Outcomes Grid */}
-        <StaggerContainer className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <StaggerContainer className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {outcomes.map((outcome) => (
             <StaggerItem key={outcome.title}>
               <div className="text-center p-6 h-full">
