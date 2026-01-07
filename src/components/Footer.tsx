@@ -16,7 +16,7 @@ const Footer = () => {
           <div className="flex items-center">
             <img
               src={energladLogo}
-              alt="EnerGlad Renewables"
+              alt="EnerGlad Renewables - Solar O&M and Asset Management"
               className="h-12 w-auto"
             />
           </div>

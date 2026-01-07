@@ -12,7 +12,7 @@ const AboutSection = () => {
             <div className="rounded-2xl overflow-hidden shadow-2xl">
               <img
                 src={solarAboutImage}
-                alt="Commercial solar installation"
+                alt="Commercial ground-mounted solar array in Ontario maintained by EnerGlad Renewables"
                 className="w-full h-auto object-cover"
               />
             </div>
