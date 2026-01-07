@@ -11,27 +11,38 @@ const ServicesSection = () => {
     {
       icon: Monitor,
       title: "24/7 Remote Monitoring",
-      description: "Continuous performance tracking with automated alerting to identify production anomalies before they impact revenue.",
+      description:
+        "Continuous performance tracking with automated alerting to identify production anomalies before they impact revenue.",
     },
     {
       icon: Wrench,
       title: "Preventative & Corrective Maintenance",
-      description: "Scheduled inspections and rapid-response service to maintain system uptime and extend asset lifespan.",
+      description:
+        "Scheduled inspections and rapid-response service to maintain system uptime and extend asset lifespan.",
     },
     {
       icon: BarChart3,
       title: "Performance Analysis & Reporting",
-      description: "Detailed production metrics, degradation tracking, and periodic reporting for informed asset management decisions.",
+      description:
+        "Detailed production metrics, degradation tracking, and periodic reporting for informed asset management decisions.",
     },
     {
       icon: ClipboardCheck,
       title: "Technical Due Diligence",
-      description: "Independent inspections and commissioning oversight to verify quality and ensure accountability.",
+      description:
+        "Independent inspections and commissioning oversight to verify quality and ensure accountability.",
     },
     {
       icon: FolderKanban,
       title: "Asset Management",
-      description: "Lifecycle planning, warranty administration, and coordination with utilities and regulatory bodies.",
+      description:
+        "Lifecycle planning, warranty administration, and coordination with utilities and regulatory bodies.",
+    },
+    {
+      icon: ClipboardCheck,
+      title: "Engineering Services",
+      description:
+        "Engineering-led design support and technical reviews delivered through vetted third-party partners.",
     },
   ];
 
