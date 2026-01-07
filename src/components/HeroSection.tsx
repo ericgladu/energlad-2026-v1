@@ -54,13 +54,13 @@ const HeroSection = () => {
             onClick={() => scrollToSection("#contact")}
             className="rounded-full px-8 py-6 text-base font-semibold"
           >
-            Request a Consultation
+            Request PV Support
           </Button>
           <Button 
             size="lg"
             variant="outline"
             onClick={() => scrollToSection("#services")}
-            className="rounded-full px-8 py-6 text-base font-semibold bg-background/20 border-foreground/50 text-foreground hover:bg-background/40 hover:text-foreground"
+            className="rounded-full px-8 py-6 text-base font-semibold bg-card/90 border-border text-foreground hover:bg-card hover:text-foreground"
           >
             View Services
           </Button>
