@@ -32,7 +32,7 @@ const Header = () => {
             <img
               src={energladLogo}
               alt="EnerGlad Renewables"
-              className="h-12 w-auto mix-blend-multiply"
+              className="h-16 w-auto mix-blend-multiply"
             />
           </Link>
           <nav className="hidden md:flex items-center gap-8">
