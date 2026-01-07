@@ -13,7 +13,7 @@ const OutcomesSection = () => {
       icon: ShieldCheck,
       title: "Lower Lifecycle Risk",
       description:
-        "Independent oversight that protects against degradation, workmanship issues, and missed failures.",
+        "Independent oversight that protects against premature degradation, workmanship issues, and missed failures.",
     },
     {
       icon: FileText,
