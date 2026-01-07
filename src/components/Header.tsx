@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import EnerGladLogo from "./EnerGladLogo";
+import energladLogo from "@/assets/energlad-logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -29,7 +29,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex-shrink-0">
-            <EnerGladLogo />
+            <img src={energladLogo} alt="EnerGlad Renewables" className="h-12 w-auto" />
           </Link>
 
           {/* Desktop Navigation */}

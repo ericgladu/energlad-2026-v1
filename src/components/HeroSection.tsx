@@ -67,7 +67,7 @@ const HeroSection = () => {
             size="lg"
             variant="outline"
             onClick={() => scrollToSection("#services")}
-            className="rounded-full px-8 py-6 text-base font-semibold border-[hsl(var(--text-light)/0.3)] text-[hsl(var(--text-light))] hover:bg-[hsl(var(--text-light)/0.1)] hover:text-[hsl(var(--text-light))]"
+            className="rounded-full px-8 py-6 text-base font-semibold bg-background/20 border-foreground/50 text-foreground hover:bg-background/40 hover:text-foreground"
           >
             Our Services
           </Button>
