@@ -12,7 +12,7 @@ const ServicesSection = () => {
       icon: Settings,
       title: "Operations & Maintenance (O&M)",
       description:
-        "Ongoing system monitoring, preventative maintenance, troubleshooting, and corrective actions to maximize uptime and energy yield.",
+        "Ongoing monitoring, preventative maintenance, troubleshooting, and corrective actions to maximize uptime and energy yield.",
     },
     {
       icon: ClipboardCheck,
@@ -24,13 +24,13 @@ const ServicesSection = () => {
       icon: LifeBuoy,
       title: "Lifecycle Asset Support",
       description:
-        "From post-installation handover through mid-life inspections and repowering support, we stay engaged beyond a single project phase.",
+        "From handover to mid-life and repowering readiness, we stay engaged throughout your asset's operating horizon.",
     },
     {
       icon: UserCheck,
       title: "Technical Advisory & Owner Representation",
       description:
-        "Engineering insight and owner-side support for asset owners, co-operatives, and institutional clients.",
+        "Data-driven counsel for owners, co-ops, and institutional investors navigating performance challenges and decisions.",
     },
   ];
 
@@ -40,7 +40,7 @@ const ServicesSection = () => {
         {/* Section Header */}
         <FadeInUp className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground font-display mb-4">
-            Our Services
+            Our Core Services
           </h2>
           <div className="w-20 h-1 bg-primary mx-auto rounded-full mt-6" />
         </FadeInUp>

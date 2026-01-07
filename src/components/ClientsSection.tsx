@@ -3,9 +3,8 @@ import { FadeInUp, StaggerContainer, StaggerItem } from "@/components/ui/scroll-
 const ClientsSection = () => {
   const credibilityPoints = [
     "10+ MW under active stewardship",
-    "Commercial rooftop and ground-mount portfolios across Ontario",
-    "Experience supporting co-operatives, institutional owners, and private asset holders",
-    "Independent from EPCs and equipment manufacturers",
+    "Commercial rooftop and ground-mount systems supported across Ontario",
+    "Experience with co-ops, institutional owners, and commercial portfolios",
   ];
 
   return (
@@ -33,10 +32,9 @@ const ClientsSection = () => {
           </div>
         </StaggerContainer>
 
-        {/* Disclaimer */}
         <FadeInUp delay={0.3} className="text-center mt-12">
           <p className="text-sm text-muted-foreground italic">
-            Client names and system details shared with permission or anonymized.
+            (Client names and asset details are shared with permission or anonymized.)
           </p>
         </FadeInUp>
       </div>
