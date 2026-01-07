@@ -29,7 +29,11 @@ const Header = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex-shrink-0">
-            <img src={energladLogo} alt="EnerGlad Renewables" className="h-12 w-auto" />
+            <img 
+              src={energladLogo} 
+              alt="EnerGlad Renewables" 
+              className="h-12 w-auto mix-blend-multiply dark:mix-blend-normal dark:brightness-0 dark:invert" 
+            />
           </Link>
 
           {/* Desktop Navigation */}
