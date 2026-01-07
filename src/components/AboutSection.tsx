@@ -19,7 +19,7 @@ const AboutSection = () => {
   }, {
     icon: MapPin,
     title: "Ontario-Based",
-    description: "Headquartered in Ottawa with deep knowledge of Canadian regulatory and grid requirements."
+    description: "Headquartered in Ottawa with deep knowledge of Canadian regulatory and utility requirements."
   }];
   return <section id="about" className="py-24 bg-background">
       <div className="container mx-auto px-6">
