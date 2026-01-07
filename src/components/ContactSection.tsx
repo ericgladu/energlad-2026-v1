@@ -34,7 +34,7 @@ const ContactSection = () => {
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Whether you manage a single system or a growing portfolio, EnerGlad provides the 
-            technical oversight needed to protect performance and long-term value.
+            technical oversight to protect performance, reliability, and long-term value.
           </p>
           <div className="w-20 h-1 bg-primary mx-auto rounded-full mt-6" />
         </FadeInUp>

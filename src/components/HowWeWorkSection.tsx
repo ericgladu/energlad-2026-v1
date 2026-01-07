@@ -7,19 +7,19 @@ const HowWeWorkSection = () => {
       icon: Scale,
       title: "Independent by Design",
       description:
-        "We do not sell equipment or installations—our focus is objective performance and reliability.",
+        "We do not install, sell, or warranty equipment — our sole focus is objective reliability and performance stewardship.",
     },
     {
       icon: BarChart2,
       title: "Data-Driven Decisions",
       description:
-        "Monitoring, inspections, and recommendations are based on measured performance and documented findings.",
+        "Monitoring and inspections guided by measurable performance and documented findings.",
     },
     {
       icon: Handshake,
-      title: "Long-Term Partnership",
+      title: "Owner-Aligned Partnership",
       description:
-        "We work alongside asset owners throughout the operating life of their systems—not just at handover.",
+        "We work alongside you through the lifecycle — not just at handover.",
     },
   ];
 
@@ -29,7 +29,7 @@ const HowWeWorkSection = () => {
         {/* Section Header */}
         <FadeInUp className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground font-display mb-4">
-            How We Work
+            How EnerGlad Works
           </h2>
           <div className="w-20 h-1 bg-primary mx-auto rounded-full mt-6" />
         </FadeInUp>

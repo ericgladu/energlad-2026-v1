@@ -5,27 +5,27 @@ const OutcomesSection = () => {
   const outcomes = [
     {
       icon: Activity,
-      title: "Reliable Performance",
+      title: "Reliable Production",
       description:
-        "Proactive monitoring and inspection to catch issues before they become outages.",
+        "Proactive monitoring and rapid issue response to keep systems performing.",
     },
     {
       icon: ShieldCheck,
-      title: "Lower Lifecycle Risk",
+      title: "Lower Risk",
       description:
-        "Independent oversight that protects against degradation, workmanship issues, and missed failures.",
+        "Independent oversight that protects against degradation and hidden failures.",
     },
     {
       icon: FileText,
       title: "Operational Transparency",
       description:
-        "Clear reporting, documented findings, and data you can trust.",
+        "Clear reporting and documented findings you can act on.",
     },
     {
       icon: TrendingUp,
       title: "Long-Term Asset Value",
       description:
-        "Maintenance and quality assurance aligned with the full operating life of your system.",
+        "Intelligent stewardship that supports lifecycle performance goals.",
     },
   ];
 
