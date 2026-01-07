@@ -33,25 +33,18 @@ const HeroSection = () => {
           </div>
         </div>
 
-        {/* Tagline Badge */}
-        <div className="mb-6 animate-fade-in">
-          <span className="inline-block px-4 py-2 rounded-full bg-[hsl(var(--text-light)/0.1)] border border-[hsl(var(--text-light)/0.2)] text-sm font-medium text-[hsl(var(--text-light)/0.9)] tracking-wide">
-            Ontario-Based · Independent · Solar Specialists
-          </span>
-        </div>
-
         {/* Headline */}
         <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-[hsl(var(--text-light))] mb-6 animate-fade-in font-display leading-tight">
-          Built for the Long Haul
+          Stewards of Solar Assets
         </h1>
 
         {/* Subtitle */}
-        <p className="text-lg md:text-xl text-[hsl(var(--text-light-muted))] max-w-2xl mx-auto mb-4 animate-fade-in-delay-1">
-          Stewards of solar PV assets across Canada and the USA
+        <p className="text-lg md:text-xl text-[hsl(var(--text-light-muted))] max-w-3xl mx-auto mb-4 animate-fade-in-delay-1">
+          Operations, Maintenance & Independent Quality Assurance for Commercial Solar
         </p>
         
-        <p className="text-base text-[hsl(var(--text-light-muted)/0.8)] max-w-xl mx-auto mb-10 animate-fade-in-delay-1">
-          Long-term operational support, monitoring, and asset management for solar PV systems
+        <p className="text-base text-[hsl(var(--text-light-muted)/0.8)] max-w-2xl mx-auto mb-10 animate-fade-in-delay-1">
+          Protect production, reduce unplanned downtime, and safeguard long-term asset value—year after year.
         </p>
 
         {/* CTA Buttons */}
@@ -61,7 +54,7 @@ const HeroSection = () => {
             onClick={() => scrollToSection("#contact")}
             className="rounded-full px-8 py-6 text-base font-semibold"
           >
-            Request PV Support
+            Request a Consultation
           </Button>
           <Button 
             size="lg"
@@ -69,7 +62,7 @@ const HeroSection = () => {
             onClick={() => scrollToSection("#services")}
             className="rounded-full px-8 py-6 text-base font-semibold bg-background/20 border-foreground/50 text-foreground hover:bg-background/40 hover:text-foreground"
           >
-            Our Services
+            View Services
           </Button>
         </div>
       </div>

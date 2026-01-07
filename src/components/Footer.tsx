@@ -6,6 +6,11 @@ const Footer = () => {
   return (
     <footer className="bg-card text-foreground py-12 border-t border-border">
       <div className="container mx-auto px-6">
+        {/* Tagline */}
+        <p className="text-center text-muted-foreground mb-8 text-sm">
+          Independent solar asset stewardship focused on performance, reliability, and long-term value.
+        </p>
+
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Logo */}
           <div className="flex items-center">
