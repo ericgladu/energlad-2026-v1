@@ -93,7 +93,7 @@ const CredibilityCounter = () => {
   return (
     <section className="py-20 bg-muted/30">
       <div className="container mx-auto px-6">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-4xl mx-auto">
           {stats.map((stat, index) => (
             <CounterItem
               key={stat.label}
