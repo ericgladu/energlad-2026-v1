@@ -83,12 +83,6 @@ const CredibilityCounter = () => {
       description: "Distributed generation under ongoing operations & maintenance",
     },
     {
-      endValue: 15,
-      suffix: "+",
-      label: "Vintages & EPCs",
-      description: "Experience across diverse system designs and equipment platforms",
-    },
-    {
       endValue: 100,
       suffix: "%",
       label: "Independent, Owner-Aligned",
