@@ -1,4 +1,4 @@
-import { Activity, ShieldCheck, FileText, TrendingUp, Users } from "lucide-react";
+import { Activity, ShieldCheck, FileText, Users } from "lucide-react";
 import { FadeInUp, StaggerContainer, StaggerItem } from "@/components/ui/scroll-animate";
 
 const OutcomesSection = () => {
@@ -7,19 +7,13 @@ const OutcomesSection = () => {
       icon: Users,
       title: "Owner Representation",
       description:
-        "We bridge the technical gap between asset owners and installers—advocating for your interests across the full lifecycle.",
+        "Independent, owner-side technical representation across the full asset lifecycle.",
     },
     {
       icon: Activity,
       title: "Reliable Performance",
       description:
-        "Proactive monitoring and inspection to catch issues before they become outages.",
-    },
-    {
-      icon: ShieldCheck,
-      title: "Lower Lifecycle Risk",
-      description:
-        "Independent oversight that protects against premature degradation, workmanship issues, and missed failures.",
+        "Proactive monitoring and inspection to identify issues before they become outages.",
     },
     {
       icon: FileText,
@@ -28,10 +22,10 @@ const OutcomesSection = () => {
         "Clear reporting, documented findings, and data you can trust.",
     },
     {
-      icon: TrendingUp,
-      title: "Long-Term Asset Value",
+      icon: ShieldCheck,
+      title: "Lifecycle Asset Value",
       description:
-        "Maintenance and quality assurance aligned with the full operating life of your system.",
+        "Reduced risk and preserved system value through disciplined operations and oversight.",
     },
   ];
 
@@ -47,7 +41,7 @@ const OutcomesSection = () => {
         </FadeInUp>
 
         {/* Outcomes Grid */}
-        <StaggerContainer className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
+        <StaggerContainer className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {outcomes.map((outcome) => (
             <StaggerItem key={outcome.title}>
               <div className="text-center p-6 h-full">
