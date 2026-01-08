@@ -26,7 +26,7 @@ const AboutSection = () => {
           {/* Text Content */}
           <SlideInRight className="space-y-6 order-1 lg:order-2">
             <div className="inline-block px-4 py-2 bg-primary/10 rounded-full">
-              <span className="text-sm font-semibold text-primary">Established 2019</span>
+              <span className="text-sm font-semibold text-primary">Established 2020</span>
             </div>
 
             <h2 className="text-3xl md:text-4xl font-bold text-foreground font-display">
