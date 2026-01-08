@@ -1,8 +1,14 @@
-import { Activity, ShieldCheck, FileText, TrendingUp } from "lucide-react";
+import { Activity, ShieldCheck, FileText, TrendingUp, Users } from "lucide-react";
 import { FadeInUp, StaggerContainer, StaggerItem } from "@/components/ui/scroll-animate";
 
 const OutcomesSection = () => {
   const outcomes = [
+    {
+      icon: Users,
+      title: "Owner Representation",
+      description:
+        "We bridge the technical gap between asset owners and installers—advocating for your interests across the full lifecycle.",
+    },
     {
       icon: Activity,
       title: "Reliable Performance",
@@ -41,7 +47,7 @@ const OutcomesSection = () => {
         </FadeInUp>
 
         {/* Outcomes Grid */}
-        <StaggerContainer className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <StaggerContainer className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
           {outcomes.map((outcome) => (
             <StaggerItem key={outcome.title}>
               <div className="text-center p-6 h-full">
