@@ -1,5 +1,5 @@
-import { Sun } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import SunIcon from "@/components/SunIcon";
 import heroImage from "@/assets/hero-solar.jpg";
 
 const HeroSection = () => {
@@ -28,8 +28,8 @@ const HeroSection = () => {
       <div className="relative z-10 container mx-auto px-6 text-center pt-20">
         {/* Sun Icon */}
         <div className="mb-8 animate-fade-in">
-          <div className="inline-flex items-center justify-center w-24 h-24 rounded-full bg-primary/30 border-2 border-primary/60 sun-icon-glow backdrop-blur-sm">
-            <Sun className="w-12 h-12 text-primary drop-shadow-lg" strokeWidth={2} />
+          <div className="inline-flex items-center justify-center w-28 h-28 rounded-full bg-primary/40 border-[3px] border-primary sun-icon-glow backdrop-blur-sm">
+            <SunIcon size={56} className="text-primary drop-shadow-lg" />
           </div>
         </div>
 
