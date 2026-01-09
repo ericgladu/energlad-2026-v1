@@ -24,6 +24,11 @@ const ContactSection = () => {
     },
   ];
 
+  const mailtoHref = "mailto:info@energlad.com?subject=Asset%20Discussion";
+  const openMailto = () => {
+    // Using location.assign is typically more reliable than relying on <a> default behavior
+    window.location.assign(mailtoHref);
+  };
   return (
     <section id="contact" className="py-24 bg-background">
       <div className="container mx-auto px-6">
@@ -44,25 +49,23 @@ const ContactSection = () => {
           <p className="text-sm text-muted-foreground mb-4">
             Trusted by cooperative and institutional asset owners.
           </p>
-          <Button size="lg" className="rounded-full px-10 py-6 text-base font-semibold" asChild>
-            <a
-              href="mailto:info@energlad.com?subject=Asset%20Discussion"
-              onClick={() => {
-                // Some environments require explicitly setting location
-                window.location.href = "mailto:info@energlad.com?subject=Asset%20Discussion";
-              }}
-            >
-              Discuss Your Asset
-            </a>
+          <Button
+            size="lg"
+            className="rounded-full px-10 py-6 text-base font-semibold"
+            onClick={openMailto}
+            type="button"
+          >
+            Discuss Your Asset
           </Button>
 
           <div className="mt-4 flex flex-col items-center gap-2">
             <a
               className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-              href="mailto:info@energlad.com"
+              href={mailtoHref}
             >
-              Or email us directly: <span className="font-medium">info@energlad.com</span>
+              Having trouble? Open your email client
             </a>
+
             <button
               type="button"
               className="text-sm text-primary hover:text-primary/80 transition-colors font-medium"
