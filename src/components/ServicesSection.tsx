@@ -24,7 +24,7 @@ const ServicesSection = () => {
       icon: LifeBuoy,
       title: "Lifecycle Asset Support",
       description:
-        "From post-installation handover through mid-life inspections and repowering support, we stay engaged beyond a single project phase.",
+        "From pre-construction planning and permitting through construction oversight, post-installation handover, mid-life inspections, and repowering support—we stay engaged across every project phase.",
     },
     {
       icon: UserCheck,
