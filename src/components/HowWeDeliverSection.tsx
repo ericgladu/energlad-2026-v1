@@ -23,9 +23,9 @@ const HowWeDeliverSection = () => {
     },
     {
       icon: Network,
-      title: "Connected & Resourceful",
+      title: "Technical Orchestration",
       description:
-        "We draw on a curated network of vetted specialists—engineers, inspectors, and technical partners—to assemble the right team for every project.",
+        "We coordinate the right technical disciplines—electrical, mechanical, structural, controls, and OEM support—under EnerGlad's oversight, providing a single point of accountability for complex solar assets.",
     },
   ];
 
