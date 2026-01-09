@@ -5,7 +5,7 @@ import CredibilityCounter from "@/components/CredibilityCounter";
 import OutcomesSection from "@/components/OutcomesSection";
 import AboutSection from "@/components/AboutSection";
 import ServicesSection from "@/components/ServicesSection";
-import HowWeWorkSection from "@/components/HowWeWorkSection";
+import HowWeDeliverSection from "@/components/HowWeDeliverSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 
@@ -20,7 +20,7 @@ const Index = () => {
         <OutcomesSection />
         <AboutSection />
         <ServicesSection />
-        <HowWeWorkSection />
+        <HowWeDeliverSection />
         <ContactSection />
       </main>
       <Footer />
