@@ -30,7 +30,7 @@ const ServicesSection = () => {
       icon: UserCheck,
       title: "Technical Advisory & Owner Representation",
       description:
-        "Engineering insight and owner-side support for asset owners, co-operatives, and institutional clients.",
+        "Engineering insight and owner-side support for asset owners, co-operatives, and institutional clients—leveraging our network to bring the right expertise to every engagement.",
     },
   ];
 
