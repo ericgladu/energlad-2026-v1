@@ -21,10 +21,16 @@ const Footer = () => {
             />
           </div>
 
-          {/* Copyright */}
-          <p className="text-sm text-muted-foreground">
-            © {currentYear} EnerGlad Renewables. All rights reserved.
-          </p>
+          {/* Copyright & Privacy */}
+          <div className="text-sm text-muted-foreground text-center">
+            <p>© {currentYear} EnerGlad Renewables. All rights reserved.</p>
+            <a 
+              href="/privacy" 
+              className="hover:text-foreground transition-colors"
+            >
+              Privacy Policy
+            </a>
+          </div>
 
           {/* Contact */}
           <div className="flex items-center gap-6 text-sm">
