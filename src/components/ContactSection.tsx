@@ -41,8 +41,11 @@ const ContactSection = () => {
 
         {/* CTA */}
         <FadeInUp delay={0.2} className="text-center mb-16">
+          <p className="text-sm text-muted-foreground mb-4">
+            Trusted by cooperative and institutional asset owners.
+          </p>
           <Button size="lg" className="rounded-full px-10 py-6 text-base font-semibold" asChild>
-            <a href="mailto:info@energlad.com?subject=Consultation%20Request">Request a Consultation</a>
+            <a href="mailto:info@energlad.com?subject=Asset%20Discussion">Discuss Your Asset</a>
           </Button>
         </FadeInUp>
 
