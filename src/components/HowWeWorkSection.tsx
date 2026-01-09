@@ -1,7 +1,7 @@
-import { Scale, BarChart2, Handshake } from "lucide-react";
+import { Scale, BarChart2, Handshake, Network } from "lucide-react";
 import { FadeInUp, StaggerContainer, StaggerItem } from "@/components/ui/scroll-animate";
 
-const HowWeWorkSection = () => {
+const HowWeDeliverSection = () => {
   const principles = [
     {
       icon: Scale,
@@ -21,6 +21,12 @@ const HowWeWorkSection = () => {
       description:
         "We work alongside asset owners throughout the operating life of their systems—not just at handover.",
     },
+    {
+      icon: Network,
+      title: "Connected & Resourceful",
+      description:
+        "We draw on a curated network of vetted specialists—engineers, inspectors, and technical partners—to assemble the right team for every project.",
+    },
   ];
 
   return (
@@ -29,13 +35,13 @@ const HowWeWorkSection = () => {
         {/* Section Header */}
         <FadeInUp className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground font-display mb-4">
-            How We Work
+            How We Deliver
           </h2>
           <div className="w-20 h-1 bg-primary mx-auto rounded-full mt-6" />
         </FadeInUp>
 
         {/* Principles Grid */}
-        <StaggerContainer className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <StaggerContainer className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
           {principles.map((principle) => (
             <StaggerItem key={principle.title}>
               <div className="bg-card rounded-xl p-8 text-center shadow-lg border border-border h-full">
@@ -57,4 +63,4 @@ const HowWeWorkSection = () => {
   );
 };
 
-export default HowWeWorkSection;
+export default HowWeDeliverSection;
