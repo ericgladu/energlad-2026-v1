@@ -12,28 +12,28 @@ const SunIcon = ({ className = "", size = 48 }: SunIconProps) => {
       fill="none"
       className={className}
     >
-      {/* Center circle */}
-      <circle cx="32" cy="32" r="10" fill="currentColor" />
+      {/* Center ring (hollow) */}
+      <circle cx="32" cy="32" r="10" stroke="currentColor" strokeWidth="3" fill="none" />
       
-      {/* Radiating rays - 8 rays around the sun */}
+      {/* Radiating rays - 8 short rays */}
       {/* Top */}
-      <rect x="30" y="8" width="4" height="10" rx="2" fill="currentColor" />
+      <line x1="32" y1="6" x2="32" y2="16" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
       {/* Bottom */}
-      <rect x="30" y="46" width="4" height="10" rx="2" fill="currentColor" />
+      <line x1="32" y1="48" x2="32" y2="58" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
       {/* Left */}
-      <rect x="8" y="30" width="10" height="4" rx="2" fill="currentColor" />
+      <line x1="6" y1="32" x2="16" y2="32" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
       {/* Right */}
-      <rect x="46" y="30" width="10" height="4" rx="2" fill="currentColor" />
+      <line x1="48" y1="32" x2="58" y2="32" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
       
       {/* Diagonal rays */}
       {/* Top-right */}
-      <rect x="45" y="13" width="4" height="10" rx="2" fill="currentColor" transform="rotate(45 47 18)" />
+      <line x1="46" y1="18" x2="52" y2="12" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
       {/* Top-left */}
-      <rect x="13" y="15" width="4" height="10" rx="2" fill="currentColor" transform="rotate(-45 15 20)" />
+      <line x1="18" y1="18" x2="12" y2="12" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
       {/* Bottom-right */}
-      <rect x="47" y="43" width="4" height="10" rx="2" fill="currentColor" transform="rotate(-45 49 48)" />
+      <line x1="46" y1="46" x2="52" y2="52" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
       {/* Bottom-left */}
-      <rect x="13" y="41" width="4" height="10" rx="2" fill="currentColor" transform="rotate(45 15 46)" />
+      <line x1="18" y1="46" x2="12" y2="52" stroke="currentColor" strokeWidth="3" strokeLinecap="round" />
     </svg>
   );
 };
