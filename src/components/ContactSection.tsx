@@ -44,11 +44,13 @@ const ContactSection = () => {
           <p className="text-sm text-muted-foreground mb-4">
             Trusted by cooperative and institutional asset owners.
           </p>
-          <a href="mailto:info@energlad.com?subject=Asset%20Discussion">
-            <Button size="lg" className="rounded-full px-10 py-6 text-base font-semibold">
-              Discuss Your Asset
-            </Button>
-          </a>
+          <Button 
+            size="lg" 
+            className="rounded-full px-10 py-6 text-base font-semibold"
+            onClick={() => window.location.href = "mailto:info@energlad.com?subject=Asset%20Discussion"}
+          >
+            Discuss Your Asset
+          </Button>
         </FadeInUp>
 
         {/* Contact Cards */}
