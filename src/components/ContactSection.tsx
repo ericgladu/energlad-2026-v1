@@ -44,13 +44,39 @@ const ContactSection = () => {
           <p className="text-sm text-muted-foreground mb-4">
             Trusted by cooperative and institutional asset owners.
           </p>
-          <Button 
-            size="lg" 
-            className="rounded-full px-10 py-6 text-base font-semibold"
-            onClick={() => window.location.href = "mailto:info@energlad.com?subject=Asset%20Discussion"}
-          >
-            Discuss Your Asset
+          <Button size="lg" className="rounded-full px-10 py-6 text-base font-semibold" asChild>
+            <a
+              href="mailto:info@energlad.com?subject=Asset%20Discussion"
+              onClick={() => {
+                // Some environments require explicitly setting location
+                window.location.href = "mailto:info@energlad.com?subject=Asset%20Discussion";
+              }}
+            >
+              Discuss Your Asset
+            </a>
           </Button>
+
+          <div className="mt-4 flex flex-col items-center gap-2">
+            <a
+              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+              href="mailto:info@energlad.com"
+            >
+              Or email us directly: <span className="font-medium">info@energlad.com</span>
+            </a>
+            <button
+              type="button"
+              className="text-sm text-primary hover:text-primary/80 transition-colors font-medium"
+              onClick={async () => {
+                try {
+                  await navigator.clipboard.writeText("info@energlad.com");
+                } catch {
+                  // Clipboard may be blocked; silently ignore.
+                }
+              }}
+            >
+              Copy email address
+            </button>
+          </div>
         </FadeInUp>
 
         {/* Contact Cards */}
