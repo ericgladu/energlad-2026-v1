@@ -51,10 +51,12 @@ const HeroSection = () => {
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-delay-2">
           <Button 
             size="lg"
-            onClick={() => scrollToSection("#contact")}
             className="rounded-full px-8 py-6 text-base font-semibold"
+            asChild
           >
-            Request PV Support
+            <a href="mailto:info@energlad.com?subject=PV%20Support%20Request">
+              Request PV Support
+            </a>
           </Button>
           <Button 
             size="lg"
